@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: url("../Resources/registerBackground.svg");
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card,
+.descCard {
+  height: 100%;
+  width: 48%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.descCard {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.descCard img {
+  width: 300px;
+  height: auto;
+}
+.descCard h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.descCard h2 span {
+  color: #099773;
+  font-size: 3em;
+}
+.recruiter,
+.employee {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+}
+.recruiter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employee {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  padding: 40px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+}
+form h1 {
+  color: #099773;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #099773;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: #099773;
+  color: white;
+  cursor: pointer;
+}
+.change {
+  color: #099773;
+  cursor: pointer;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/companyHomePage.css" />
+    <title>Craftworks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li class="navbar-item selected">Home</li>
+          <li class="navbar-item">Manage Jobs</li>
+          <li class="navbar-item">Profile</li>
+          <li class="navbar-item logout">Log Out</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h3>Hello {name}</h3>
+        <div class="analytics">
+          <div class="analytics-item">
+            <p>Posted Jobs</p>
+            <p>10</p>
+          </div>
+          <div class="analytics-item">
+            <p>Applicants</p>
+            <p>100</p>
+          </div>
+          <div class="analytics-item">
+            <p>Accept Rate</p>
+            <p>20%</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="create-job" id="showForm">Create Job</button>
+        </div>
+        <!-- When a user clicks on the button, a pop up <form> is supposed to appear, with job info -->
+        <!-- The user should fill it out then it is filled in the jobs table as well as creates a table of its own -->
+        <div class="jobs">
+          <p>Seems like you haven't created any jobs yet</p>
+        </div>
+        <div class="job-create-form">
+          <form action="../PHP/createJob.php" method="POST">
+            <div class="close">
+              <i class="fa-solid fa-xmark" id="closeForm"></i>
+            </div>
+            <div class="field">
+              <label>Name</label>
+              <input type="text" placeholder="Job Name" name="jobName" />
+            </div>
+            <div class="field">
+              <label>Job Description</label>
+              <input type="text" placeholder="Job Description" name="jobDesc" />
+            </div>
+            <div class="field">
+              <label for="">Pay</label>
+              <input type="numeric" placeholder="In Ksh." name="jobPay" />
+            </div>
+            <div class="field">
+              <label for="">Requirements</label>
+              <textarea
+                cols="30"
+                rows="7"
+                placeholder="Write a short description of your desired candidate"
+                name="jobReq"
+              ></textarea>
+            </div>
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../JavaScript/companyHomePage.js"></script>
+  </body>
+</html>

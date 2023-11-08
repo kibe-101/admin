@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/registerPage.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="descCard">
+        <h2>Welcome to <span>Craftworks</span></h2>
+        <img src="../Resources/registerSecondBackground.svg" alt="" />
+      </div>
+      <div class="card">
+        <div class="recruiter">
+          <form action="../PHP/registerEmployer.php" method="POST">
+            <h1>Recruiter</h1>
+            <input type="text" placeholder="Firstname" name="firstname" />
+            <input type="text" placeholder="Lastname" name="lastname" />
+            <input type="text" placeholder="Company Name" name="companyname" />
+            <input type="email" placeholder="Email" name="email" />
+            <input type="password" placeholder="Password" name="password" />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="confirmpassword"
+            />
+            <input type="submit" value="Register" />
+          </form>
+          <p id="toEmployee" class="change">Looking for a job?</p>
+        </div>
+        <div class="employee">
+          <form action="../PHP/registerUser.php" method="POST">
+            <h1>Employee</h1>
+            <input type="text" placeholder="Firstname" name="firstname" />
+            <input type="text" placeholder="Lastname" name="lastname" />
+            <input
+              type="text"
+              placeholder="Write a short description of yourself"
+            />
+            <input type="email" placeholder="Email" name="email" />
+            <input type="password" placeholder="Password" name="password" />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="confirmpassword"
+            />
+            <input type="submit" value="Register" />
+          </form>
+          <p id="toRecruiter" class="change">Looking to hire someone?</p>
+        </div>
+      </div>
+    </div>
+    <script src="../JavaScript/registerPage.js"></script>
+  </body>
+</html>

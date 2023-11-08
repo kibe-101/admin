@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background-color: #24405f;
+  height: 100vh;
+  position: fixed;
+  padding: 5px;
+}
+.navbar ul {
+  margin-top: 50px;
+  list-style: none;
+  height: fit-content;
+  width: 100%;
+}
+.navbar ul li {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+li:hover {
+  background-color: #3a5a86;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: #a84c32;
+  cursor: pointer;
+}
+.selected {
+  background-color: #1b2a3f;
+}
+.selected:hover {
+  background-color: #1b2a3f;
+}
+.content {
+  margin-left: 200px;
+  padding: 40px 20px;
+  width: 100%;
+  height: 100vh;
+}
+.content h3 {
+  margin-bottom: 15px;
+}
+.jobs {
+  background-color: rgb(212, 212, 212);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+}
+.button button {
+  background-color: #24405f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button button:hover {
+  background-color: #3a5a86;
+}
+.analytics {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+.analytics-item {
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  color: #3a5a86;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 12px #898989, inset -5px -5px 12px #ffffff;
+}
+.analytics-item p:nth-child(1) {
+  font-size: 0.7rem;
+}
+.analytics-item p:nth-child(2) {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.job-create-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+form {
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: white;
+}
+.close {
+  margin: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.close i {
+  font-size: 1.5rem;
+  color: #a84c32;
+  cursor: pointer;
+}
+.field {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.field label {
+  font-size: 0.7rem;
+  color: #1b2a3f;
+}
+.field input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+form input[type="submit"] {
+  width: 100px;
+  margin: 20px auto;
+  background-color: #24405f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
